@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1592982452 source:/home/diego/code/univali/c++/campo-minado/main.cpp
+1593028195 source:/home/diego/code/univali/c++/campo-minado/main.cpp
 	<iostream>
 	<cstdlib>
 	<time.h>

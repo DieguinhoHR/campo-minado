@@ -19,9 +19,8 @@ int main()
            i = rand() % TAM;
            j = rand() % TAM;
 
-           if (quantidade_bombas <= 2) {
-               mat_rand[i][j] = 'x';
-           }
+           mat_rand[i][j] = 'x';
+
            quantidade_bombas++;
         }
     }
@@ -36,7 +35,7 @@ int main()
                 cout << "Informe o valor: ";
                 cin >> mat[linha][coluna];
 
-                if (mat_rand[i][j] == 'x') {
+                if (mat_rand[i][j] == 'x' && quantidade_bombas >= 2) {
                     cout << "GAME OVER, MAN! TRY AGAIN";
                     return 0;
                 }
