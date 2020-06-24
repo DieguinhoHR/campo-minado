@@ -2,25 +2,26 @@
 
 using namespace std;
 
+#define TAM 2
+#define BOMBAS 2
+
 int main()
 {
-    int linhas, colunas;
+    char mat[TAM][TAM] = {};
 
-    cout << "Digite o número de linhas e colunas: ";
-    cin >> linhas >> colunas;
-
-    int mat[linhas][colunas];
-
-    for (int i = 0; i < linhas; i++) {
-        for (int j = 0; j < colunas; j++) {
-            mat[i][j] = 1;
+    for (int i = 0; i < TAM; i++) {
+        for (int j = 0; j < TAM; j++) {
+            if (BOMBAS >= 2 && TAM > 1) {
+                mat[i][j] = '2';
+            } else {
+                cout << "A quantidade de bombas não pode ser menor que 2 \n";
+                return 0;
+            }
         }
     }
-
-    cout << "\n";
-
-    for (int i = 0; i < linhas; i++) {
-        for (int j = 0; j < colunas; j++) {
+    // Exibe a matriz
+    for (int i = 0; i < TAM; i++) {
+        for (int j = 0; j < TAM; j++) {
             cout << mat[i][j];
         }
         cout << endl;
